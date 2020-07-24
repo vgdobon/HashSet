@@ -1,7 +1,4 @@
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Main {
 
@@ -28,8 +25,14 @@ public class Main {
             System.out.print(elemento+" ");
         }
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Dime un valor para buscarlo en la lista");
+        int busquedaNumero = sc.nextInt();
 
-
-
+        if(mySet1.contains(busquedaNumero)){
+            System.out.println("El numero "+busquedaNumero+" si está");
+        }else{
+            System.out.println("No esta el numero"+ busquedaNumero);
+        }
     }
 }
